@@ -274,15 +274,15 @@ if __name__ == '__main__':
 5. Clone this repository to your computer ```sh git clone https://github.com/mcsix/xela_server_ros.git```
 6. Run the following command to build the ROS 1 node package:
     ```bash
-    colcon build --packages-select xela_server_ros
+    catkin_make
     ```
 7. Run the following command to source the ROS 1 node package:
     ```bash
-    source install/setup.bash
+    source devel/setup.bash
     ```
 8. Run the following command to start the ROS 1 node:
     ```bash
-    ros run xela_server_ros xela_server_ros
+    roslaunch xela_server_ros service.launch
     ```
 9. Set up your node or test out cli commands shown above
 
