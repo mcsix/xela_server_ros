@@ -1,0 +1,9 @@
+<launch>
+    <arg name="file" default="/etc/xela/xServ.ini"/>
+    <arg name="port" default="5000"/>
+    <arg name="ip" default="127.0.0.1"/>
+    <arg name="d" default="0"/>
+
+    <node pkg="xela_server_ros" name="xela_server" type="xela_server" required="true" args="-f $(arg file) --port $(arg port) --ip $(arg ip)" />
+    <node pkg="xela_server_ros" type="xela_service" name="xela_service" required="true"  args="--port $(arg port) --ip $(arg ip) -d $(arg d)" />
+</launch>
