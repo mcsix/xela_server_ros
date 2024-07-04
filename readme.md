@@ -199,9 +199,9 @@ __xela_server_ros.srv.XelaSensorStream__
 
 
 ## Example code
-### Service
+### Service (Single update)
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from xela_server_ros.srv import XelaSensorStream
 
@@ -229,9 +229,9 @@ if __name__ == '__main__':
     main()
 ```
 
-### Topic
+### Topic (Stream)
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from xela_server_ros.msg import SensStream
 
@@ -287,6 +287,11 @@ if __name__ == '__main__':
 9. Set up your node or test out cli commands shown above
 
 ## Troubleshooting
+
+### Getting help
+* For support on the XELA software (excluding the ROS nodes) or the hardware, please contact XELA Robotics directly by following the instructions in the manual at [XELA Robotics (Support)](https://xela.lat-d5.com/)
+* For support on the ROS nodes, please open an issue in <u>**this**</u> repository, ROS node issues raised directly with XELA Robotics <u>**will not be**</u> accepted as the repository is 3rd party tool
+
 ### XELA Suite
 * Make sure you have the latest version of the XELA Suite installed
 * Make sure to follow instructions for its installation in the manual at [XELA Robotics (Support)](https://xela.lat-d5.com/)
